@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Global Fuel Prices and Taxation Trends Tableau project. Explore global fuel prices, taxation, subsidies, regional volatility, income groups, and crude oil trends.">
+<title>Global Fuel Prices &amp; Taxation Trends | Tableau Project</title>
+<style>
+:root{
+  --navy:#142d4e;--blue:#25658a;--sky:#eaf3f8;--ink:#243447;
+  --muted:#617184;--line:#dce5ec;--gold:#d7a84b
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f5f8fb;line-height:1.6}
+header{background:linear-gradient(135deg,#142d4e,#25658a);color:#fff;padding:54px 6vw 44px}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;opacity:.85;margin-bottom:10px}
+h1{margin:0;font-size:clamp(30px,4.5vw,48px);line-height:1.15}
+header p{max-width:900px;margin:16px 0 0;color:#e7f1f8;font-size:17px}
+.byline{margin-top:20px;font-size:14px;color:#d5e7f2}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.hero-tags span{border:1px solid #ffffff55;background:#ffffff12;padding:6px 12px;border-radius:20px;font-size:13px}
+nav{display:flex;flex-wrap:wrap;gap:10px;padding:14px 6vw;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+nav a,.button{display:inline-block;text-decoration:none;font-weight:600;color:var(--blue);border:1px solid #c9dce8;border-radius:8px;padding:8px 14px;background:#fff}
+nav a:hover,.button:hover{background:var(--sky)}
+main{max-width:1500px;margin:auto;padding:28px 5vw 55px}
+h2{color:var(--navy);margin:38px 0 8px;font-size:27px}
+.section-desc{color:var(--muted);margin:0 0 18px}
+.intro-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0 30px}
+.card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:20px;box-shadow:0 3px 12px rgba(20,45,78,.04)}
+.card h3{margin:0 0 8px;color:var(--navy);font-size:17px}
+.number{font-size:28px;font-weight:700;color:var(--blue)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 20px}
+.button.primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+.button.primary:hover{background:var(--navy)}
+.button.gold{background:#fff8e9;color:#79571a;border-color:#ead5a6}
+.viz-frame{width:100%;height:760px;border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden;box-shadow:0 4px 18px rgba(20,45,78,.06)}
+.viz-frame.story{height:850px}
+iframe{width:100%;height:100%;border:0}
+.dashboard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+.dashboard-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+.dashboard-card h3{margin:0 0 8px;color:var(--navy)}
+.dashboard-card p{margin:0 0 12px;color:var(--muted);font-size:14px}
+.dashboard-card a{color:var(--blue);font-weight:700;text-decoration:none}
+.dashboard-card a:hover{text-decoration:underline}
+.story-note{background:#eef5fa;border-left:4px solid var(--blue);padding:15px 18px;border-radius:8px;margin:18px 0}
+footer{text-align:center;padding:25px 6vw;color:var(--muted);border-top:1px solid var(--line);background:#fff;font-size:14px}
+@media(max-width:700px){.viz-frame{height:620px}.viz-frame.story{height:700px}header{padding-top:36px}nav{position:static}}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Data Analytics · Tableau Project</div>
+  <h1>Global Fuel Prices &amp; Taxation Trends</h1>
+  <p>An interactive exploration of global fuel-price patterns, taxation, subsidies, regional volatility, income groups, and the relationship between fuel prices and crude oil trends.</p>
+  <div class="byline">Tableau Public Project · Global Fuel Prices and Taxation</div>
+  <div class="hero-tags">
+    <span>Global Analysis</span><span>Fuel Price Trends</span><span>Taxation &amp; Subsidies</span><span>Interactive Tableau</span>
+  </div>
+</header>
+
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#dashboards">Dashboards</a>
+  <a href="#story">Tableau Story</a>
+  <a href="#insights">Analysis Areas</a>
+</nav>
+
+<main>
+<section id="overview">
+  <h2>Project Overview</h2>
+  <p class="section-desc">This project uses Tableau to explore how fuel prices and taxation policies differ across countries, regions, income groups, and subsidy levels.</p>
+  <div class="intro-grid">
+    <div class="card"><h3>Project Objective</h3>Understand global fuel-price variation and examine how taxes and subsidies relate to petrol and diesel prices.</div>
+    <div class="card"><h3>Key Indicators</h3>Petrol prices, diesel prices, average tax percentage, subsidy levels, regional volatility, and Brent crude trends.</div>
+    <div class="card"><h3>Interactive Exploration</h3>Use the Tableau dashboards to compare countries and groups, apply filters, and explore patterns in the data.</div>
+  </div>
+</section>
+
+<section id="dashboards">
+  <h2>Interactive Tableau Dashboards</h2>
+  <p class="section-desc">Choose a dashboard below or explore it directly in the embedded Tableau view.</p>
+  <div class="dashboard-grid">
+    <div class="dashboard-card">
+      <h3>Dashboard 1</h3>
+      <p>Explore the first dashboard and its visual comparisons.</p>
+      <a href="https://public.tableau.com/views/GlobalFuelPricesandTaxation_twb/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">Open Dashboard 1 ↗</a>
+    </div>
+    <div class="dashboard-card">
+      <h3>Dashboard 2</h3>
+      <p>Explore the second dashboard and its supporting analysis.</p>
+      <a href="https://public.tableau.com/views/GlobalFuelPricesandTaxation_twb/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">Open Dashboard 2 ↗</a>
+    </div>
+    <div class="dashboard-card">
+      <h3>Dashboard 3</h3>
+      <p>Explore the third dashboard and its visual insights.</p>
+      <a href="https://public.tableau.com/views/GlobalFuelPricesandTaxation_twb/Dashboard3?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">Open Dashboard 3 ↗</a>
+    </div>
+  </div>
+  <div class="actions">
+    <a class="button primary" href="https://public.tableau.com/views/GlobalFuelPricesandTaxation_twb/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">View Dashboard on Tableau Public</a>
+  </div>
+  <div class="viz-frame">
+    <iframe title="Global Fuel Prices and Taxation Dashboard 1" src="https://public.tableau.com/views/GlobalFuelPricesandTaxation_twb/Dashboard1?:showVizHome=no&:embed=true" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="story">
+  <h2>Guided Tableau Story</h2>
+  <p class="section-desc">Follow the story to move through the project’s visual analysis and findings.</p>
+  <div class="story-note">The Story view is embedded below. If it does not load in your browser, use the button to open it directly on Tableau Public.</div>
+  <div class="actions">
+    <a class="button primary" href="https://public.tableau.com/views/GlobalFuelPricesandTaxation_twb/Story1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">Open Tableau Story ↗</a>
+  </div>
+  <div class="viz-frame story">
+    <iframe title="Global Fuel Prices and Taxation Tableau Story" src="https://public.tableau.com/views/GlobalFuelPricesandTaxation_twb/Story1?:showVizHome=no&:embed=true" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="insights">
+  <h2>Analysis Areas</h2>
+  <p class="section-desc">The project brings together several complementary perspectives to make the data easier to interpret.</p>
+  <div class="intro-grid">
+    <div class="card"><h3>Global Price Variation</h3>Compare fuel prices across countries, regions, and income levels.</div>
+    <div class="card"><h3>Taxation &amp; Subsidies</h3>Explore tax percentages and subsidy categories alongside petrol prices.</div>
+    <div class="card"><h3>Temporal Trends</h3>Review fuel-price movements over time and the relationship with Brent crude.</div>
+    <div class="card"><h3>Regional Volatility</h3>Identify differences in price volatility and geographical patterns.</div>
+    <div class="card"><h3>Petrol &amp; Diesel</h3>Compare petrol and diesel prices across countries and regions.</div>
+    <div class="card"><h3>Income Group Comparison</h3>Investigate how fuel prices and policy indicators vary by income group.</div>
+  </div>
+</section>
+</main>
+
+<footer>
+  Global Fuel Prices &amp; Taxation Trends · Tableau Public Project Website
+</footer>
+</body>
+</html>
